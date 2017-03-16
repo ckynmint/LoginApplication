@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.krootoom.loginapplication.MenuActivity"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/name"
+        android:layout_width="385dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="16dp"
+        android:background="#60755e7b">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/female1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="35dp"
+            android:text="Chanakarn Yuenyong"
+            android:textSize="30dp"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/linearLayout"
+        android:layout_centerVertical="true" >
+
+    <ImageButton
+        android:id="@+id/imgbtnProfile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/user2"/>
+
+    <ImageButton
+            android:id="@+id/imgbtnHealth"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/user"
+        android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#ffffff"
+        android:id="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+    <ImageButton
+        android:id="@+id/imgbtnLove"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/like"
+        android:layout_below="@+id/name"
+        android:layout_toRightOf="@+id/linearLayout"
+        android:layout_toEndOf="@+id/linearLayout" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
